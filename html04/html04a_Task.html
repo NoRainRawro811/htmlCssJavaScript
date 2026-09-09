@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- IMAGES: this file uses pictures from the images/ folder.
+     Get them from GitHub (html04_imagesMediaTables/images) and put them in a
+     folder named images next to this file, or the pictures won't show. -->
+<html lang="en">
+<head>
+  <!-- Character encoding and viewport meta tag for responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery Task</title>
+</head>
+<body>
+
+  <h1>Image Gallery Task</h1>
+  <p>Practice adding images with alt text, captions, and sizing.</p>
+
+  <!-- ===== TODO 1: Add an image with alt text ===== -->
+  <!-- Task: Add an <img> tag with:
+       - src="images/nature-scene-1.jpg"
+       - alt="A scenic mountain landscape with clear blue sky"
+       - width="300"
+       - height="200"
+  -->
+  <section id="basic-images">
+    <h2>Basic Images with Alt Text</h2>
+    <p>All images must have descriptive alt text for accessibility.</p>
+
+    <!-- Image 1 -->
+    <img src="images/nature-scene-1.jpg" alt="A scenic mountain landscape with clear blue sky" width="300" height="200">
+
+    <!-- Image 2 -->
+    <img src="images/nature-scene-2.jpg"
+         alt="Forest path lined with tall evergreen trees"
+         width="300"
+         height="200">
+  </section>
+
+  <!-- ===== TODO 2: Create a figure with figcaption ===== -->
+  <!-- Task: Add a <figure> element containing:
+       - An <img> tag with:
+         - src="images/product-photo.jpg"
+         - alt="Professional camera with telephoto lens"
+         - width="400"
+         - height="300"
+       - A <figcaption> with text: "High-end photography equipment"
+  -->
+  <section id="figures">
+    <h2>Figures with Captions</h2>
+    <p>Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for semantic image structure.</p>
+    <img src="images/product-photo.jpg" alt="Professional camera with telephoto lens" width="400" height="300">
+    <figcaption>High-end photography equipment</figcaption>
+  </section>
+
+  <!-- ===== TODO 3: Add a responsive image ===== -->
+  <!-- Task: Create a <figure> with:
+       - An <img> with:
+         - src="images/responsive-image.jpg"
+         - alt="Wide landscape photo that adapts to screen size"
+         - style="max-width: 100%; height: auto;"
+       (The style attribute is CSS. You'll learn CSS in Lesson 05 -
+        for now, copy it exactly as written.)
+       - <figcaption>: "This image scales responsively on mobile and desktop"
+  -->
+  <section id="responsive">
+    <h2>Responsive Images</h2>
+    <p>Images should scale to fit the screen size.</p>
+    <img src="images/responsive-image.jpg" alt="Wide landscape photo that adapts to screen size" style="max-width: 100%; height: auto;">
+    <figcaption>This image scales responsively on mobile and desktop</figcaption>
+    
+
+  </section>
+
+  <!-- ===== TODO 4: Create an image gallery with multiple figures ===== -->
+  <!-- Task: Add THREE <figure> elements (use any of the images below),
+       each with an <img> and <figcaption>. Create a gallery effect.
+       Suggestions for images:
+       1. src="images/gallery-1.jpg"
+          alt="Colorful painted wall with geometric patterns"
+       2. src="images/gallery-2.jpg"
+          alt="Coastal beach at sunset with golden light"
+       3. src="images/gallery-3.jpg"
+          alt="Urban street with modern architecture"
+  -->
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <p>Build a gallery with multiple captioned images.</p>
+
+    <!-- Gallery Item 1 -->
+    ___
+
+    <!-- Gallery Item 2 -->
+    ___
+
+    <!-- Gallery Item 3 -->
+    ___
+
+  </section>
+
+  <!-- ===== TODO 5: Image best practices checklist ===== -->
+  <!-- Task: Read through these practices and think about why each matters:
+       1. ALWAYS include descriptive alt text (helps screen readers and SEO)
+       2. Choose the right file format (JPG for photos, PNG for graphics)
+       3. Optimize file size (compress images to load faster)
+       4. Use width/height attributes (reserves space, prevents layout shift)
+       5. Make images scale to the screen (the style attribute from TODO 3)
+  -->
+  <section id="practices">
+    <h2>Image Best Practices</h2>
+    <ul>
+      <li><strong>Alt text:</strong> Describe the image for screen readers and accessibility</li>
+      <li><strong>File format:</strong> Use JPG for photos, PNG for graphics with transparency, SVG for icons</li>
+      <li><strong>File size:</strong> Compress images to improve page loading speed</li>
+      <li><strong>Width/Height:</strong> Define dimensions to prevent layout shift when image loads</li>
+      <li><strong>Scaling:</strong> The style attribute can make images shrink to fit small screens (CSS, coming in Lesson 05)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Task complete! Review your alt text and captions for clarity.</p>
+  </footer>
+
+</body>
+</html>
