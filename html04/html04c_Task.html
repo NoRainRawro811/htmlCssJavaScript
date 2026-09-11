@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and viewport for responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Task</title>
+  <!-- The block below is CSS. It only draws borders on tables so you can
+       see rows and cells. CSS is Lesson 05 - leave this alone for now. -->
+  <style>
+    table, th, td { border: 1px solid #333; border-collapse: collapse; }
+    th, td { padding: 6px; }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Tables Task</h1>
+  <p>Practice building data tables with proper structure, headers, and advanced features.</p>
+
+  <!-- ===== TODO 1: Build a simple table ===== -->
+  <!-- Task: Create a table with:
+       - <caption>Student Grades</caption>
+       - Header row with: "Name", "Math", "English", "Science"
+       - 3 data rows with student information:
+         1. Alice, 95, 87, 92
+         2. Bob, 88, 91, 85
+         3. Carol, 92, 94, 89
+  -->
+  <section id="simple-table">
+    <h2>Simple Table</h2>
+    <p>Create a basic table with headers and data rows.</p>
+
+    <p>
+      <strong>Remember:</strong> Use &lt;th&gt; for header cells and &lt;td&gt; for data cells.
+    </p>
+
+    <!-- TODO 1: Add table here -->
+    ___
+
+  </section>
+
+  <!-- ===== TODO 2: Build a table with colspan ===== -->
+  <!-- Task: Create a table with:
+       - <caption>Monthly Sales by Region</caption>
+       - Header row with: "Region", "Q1", "Q2", "Q3"
+       - A merged header row using colspan:
+         - "East Region" spanning 3 columns
+         - Data: "East", $50000, $55000, $60000
+       - "West Region" (normal header) with data: "West", $45000, $48000, $52000
+  -->
+  <section id="colspan-table">
+    <h2>Table with colspan (Column Spanning)</h2>
+    <p>Merge cells across columns using the <code>colspan</code> attribute.</p>
+
+    <p>
+      <strong>colspan Example:</strong> &lt;td colspan="2"&gt; merges 2 columns
+    </p>
+
+    <!-- TODO 2: Add table with colspan here -->
+    ___
+
+  </section>
+
+  <!-- ===== TODO 3: Build a table with rowspan ===== -->
+  <!-- Task: Create a table with:
+       - <caption>Product Inventory</caption>
+       - Header row: "Product", "Location", "Quantity"
+       - Data rows:
+         1. "Laptop" (rowspan="2"), "Warehouse A", "15"
+         2. (same product), "Warehouse B", "10"
+         3. "Monitor", "Warehouse A", "20"
+  -->
+  <section id="rowspan-table">
+    <h2>Table with rowspan (Row Spanning)</h2>
+    <p>Merge cells across rows using the <code>rowspan</code> attribute.</p>
+
+    <p>
+      <strong>rowspan Example:</strong> &lt;td rowspan="2"&gt; merges 2 rows
+    </p>
+
+    <!-- TODO 3: Add table with rowspan here -->
+    ___
+
+  </section>
+
+  <!-- Accessible table example -->
+  <section id="accessible-table">
+    <h2>Accessible Table (Reference)</h2>
+    <p>Best practice: Use <code>scope</code> attribute for better accessibility.</p>
+
+    <table>
+      <caption>Product Performance Report</caption>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Q1 Sales</th>
+        <th scope="col">Q2 Sales</th>
+      </tr>
+      <tr>
+        <th scope="row">Widget A</th>
+        <td>$25,000</td>
+        <td>$30,000</td>
+      </tr>
+      <tr>
+        <th scope="row">Widget B</th>
+        <td>$15,000</td>
+        <td>$18,000</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>Task complete! Verify all tables display correctly and are accessible.</p>
+  </footer>
+
+</body>
+</html>
