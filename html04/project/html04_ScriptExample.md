@@ -57,11 +57,11 @@ Fill this in on paper first. Time it out loud with your partner before you show 
 | 4–6 | Halloway | Understood what? | Halloway standing by the Andrew | 
 | 6-9 | Andrew | This dumb prophecy! | Andrew leaning back, upset | 
 | 9-?? | Self-Insert | No need to worry, I'll explain it in 300 words or more! | The self-insert says, breaking down the nearby window. | 
-| ??-?? | Andrew and Halloway | WHAT THE [CENSORED]!? | Halloway and Andrew backing up, Halloway falling over. | 
+| ??-?? | Andrew and Halloway | WHAT THE-- WHO ARE YOU?? | Halloway and Andrew backing up, Halloway falling over. | 
 
 **Word count:** 25 (aim for about 45)
 
-**Timed reading:** _______ seconds (has to be 17 or under)
+**Timed reading:** ~10 seconds (has to be 17 or under)
 
 ### Blank shot list
 
