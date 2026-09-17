@@ -58,6 +58,7 @@ Fill this in on paper first. Time it out loud with your partner before you show 
 | 6-9 | Andrew | This dumb prophecy! | Andrew leaning back, upset | 
 | 9-?? | Self-Insert | No need to worry, I'll explain it in 300 words or more! | The self-insert says, breaking down the nearby window. | 
 | ??-?? | Andrew and Halloway | WHAT THE-- WHO ARE YOU?? | Halloway and Andrew backing up, Halloway falling over. | 
+| ??-?? | -- | --| Credits roll by at a fast speed | 
 
 **Word count:** 25 (aim for about 45)
 
