@@ -66,10 +66,11 @@ Fill this in on paper first. Time it out loud with your partner before you show 
 
 ### Blank shot list
 
-1.
-2.
-3.
-4.
-5.
+1. Andrew at computer with Halloway standing next to him. 
+2. Andrew leaning back, Halloway turning his head.  
+3. Andrew looking at Halloway. Self-insert visible through window. 
+4. Andrew looks up, defeated as Self-insert climbs up the window and breaks in, talking now. 
+5. Andrew and Halloway jumping back really quickly in shock. 
+6. Blurred screen with credits. 
 
 ---
