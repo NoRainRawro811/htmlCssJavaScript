@@ -58,7 +58,7 @@ Fill this in on paper first. Time it out loud with your partner before you show 
 | 6-9 | Andrew | This dumb prophecy! | Andrew leaning back, upset | 
 | 9-?? | Self-Insert | No need to worry, I'll explain it in 300 words or more! | The self-insert says, breaking down the nearby window. | 
 | ??-?? | Andrew and Halloway | WHAT THE-- WHO ARE YOU?? | Halloway and Andrew backing up, Halloway falling over. | 
-| ??-?? | Discresion | Side effects of viewing this may include: sneezing, wheezing, labored breathing, trouble speaking, eating, sleeping, hemorages, internal bleeding, feeling short of breath, nausia, dry mouth, cough, and fever, blockages of the ureater, choaking, bloating, tremors, seizures, coma, stroke, or death. Mood swings, muscle aches, weight gain, fague states, austioporosis, sudden psychosis, supercalifragilisticexpialidosis, masochism, vamporism, sudden necromantisism, phantom limbs, fanatisism, chronic deja vu, transient telempathy, changes in your destiny, ancient forms of leporacy, a loosening of screws, loss of: hair, weight, smell, taste, balance, vision, hearing, strength, loss of memory, will to live, sense of self, effs to give, and we are not liable. | Credits roll by at a fast speed | 
+| ??-?? | Discresion | Side effects of viewing this may include: sneezing, wheezing, labored breathing, trouble speaking, eating, sleeping, hemorages, internal bleeding, feeling short of breath, nausia, dry mouth, cough, and fever, blockages of the ureater, choaking, bloating, tremors, seizures, coma, stroke, or death. Mood swings, muscle aches, weight gain, fague states, austioporosis, sudden psychosis, supercalifragilisticexpialidosis, masochism, vamporism, sudden necromantisism, phantom limbs, fanatisism, chronic deja vu, transient telempathy, changes in your destiny, ancient forms of leporacy, a loosening of screws, loss of: hair, weight, smell, taste, balance, vision, hearing, strength, loss of memory, will to live, sense of self, effs to give, and we are not liable. | All the words flying by really quickly | 
 
 **Word count:** 25+discression (which will be read out loud at 2x or faster speed) (aim for about 45)
 
@@ -71,6 +71,6 @@ Fill this in on paper first. Time it out loud with your partner before you show 
 3. Andrew looking at Halloway. Self-insert visible through window. 
 4. Andrew looks up, defeated as Self-insert climbs up the window and breaks in, talking now. 
 5. Andrew and Halloway jumping back really quickly in shock. 
-6. Blurred screen with credits. 
+6. Blurred screen with discression. 
 
 ---
