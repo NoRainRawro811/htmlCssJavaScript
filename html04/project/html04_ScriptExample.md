@@ -62,7 +62,7 @@ Fill this in on paper first. Time it out loud with your partner before you show 
 
 **Word count:** 25+discression (which will be read out loud at 2x or faster speed) (aim for about 45)
 
-**Timed reading:** ~10 seconds (has to be 17 or under)
+**Timed reading:** ~10 seconds (has to be 20 or under)
 
 ### Blank shot list
 
