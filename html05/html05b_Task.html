@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title -->
+  <title>Colors, Fonts, and Text Task</title>
+
+  <!-- ===== TODO 1: Link Google Fonts ===== -->
+  <!-- Task: Add this line right here, ABOVE the stylesheet link:
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  -->
+
+  <!-- ===== TODO 2: Link your external stylesheet ===== -->
+  <!-- Task:
+       1. Create a new file named html05b_styles.css in the same folder as this page.
+       2. Add this line right here, BELOW the Google Fonts link:
+          <link rel="stylesheet" href="html05b_styles.css">
+       3. Test it: put  body { background-color: lightyellow; }  in the CSS file,
+          save, and refresh. If the page turns yellow, the link works.
+          Then delete that test rule.
+
+       This page must have NO <style> block and NO style="..." attributes.
+       All of your CSS goes in html05b_styles.css.
+  -->
+
+  <!-- ===== TODO 3: Write the rules in html05b_styles.css ===== -->
+  <!-- Task: Write these 8 rules in html05b_styles.css.
+       Use at least one hex color (like #f5f5f5) and at least one rgb color
+       (like rgb(32, 33, 36)) somewhere in the file.
+
+       1. body
+            font-family: 'Roboto', sans-serif;
+            background-color: a light gray
+            color: a dark gray or navy
+            line-height: 1.6;
+       2. h1
+            font-size: 40px (or larger)
+            font-weight: 700;
+            text-align: center;
+       3. a  (every link)
+            color: any color that shows up on your background
+            text-decoration: none;
+       4. nav a  (only the links inside the nav)
+            font-weight: bold;
+            margin-right: 16px;
+       5. .highlight
+            background-color: a light yellow
+            font-weight: bold;
+            padding: 10px;
+       6. #featured
+            background-color: a dark color
+            color: white;
+            padding: 16px;
+       7. footer
+            text-align: center;
+            font-size: 14px;
+       8. One more rule of your choice (h2, p, or header).
+
+       Save and refresh after each rule so you can see what it changed.
+  -->
+
+</head>
+<body>
+
+  <header>
+    <h1>Colors, Fonts, and Text</h1>
+    <nav>
+      <a href="#colors">Colors</a>
+      <a href="#fonts">Fonts</a>
+      <a href="#text">Text</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="colors">
+      <h2>Colors</h2>
+      <p>CSS colors can be a name like <code>navy</code>, a hex code like <code>#1a73e8</code>,
+         or an rgb value like <code>rgb(26, 115, 232)</code>.</p>
+
+      <!-- ===== TODO 4: Add a class ===== -->
+      <!-- Task: Add class="highlight" to the paragraph below. -->
+      <p>This paragraph should stand out with a light yellow background.</p>
+    </section>
+
+    <section id="fonts">
+      <h2>Fonts</h2>
+      <p>You set the font once on <code>body</code>, and every heading, paragraph,
+         and link on the page uses it.</p>
+
+      <!-- ===== TODO 5: Add an id ===== -->
+      <!-- Task: Add id="featured" to the paragraph below. -->
+      <p>Google Fonts gives you hundreds of free fonts. This page uses Roboto.</p>
+    </section>
+
+    <section id="text">
+      <h2>Text</h2>
+      <p>Text properties control alignment, spacing between lines, and underlines.
+         For example, <code>text-decoration: none;</code> removes the underline from
+         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">links like this one</a>.</p>
+
+      <!-- ===== TODO 6: Add a div with the same class ===== -->
+      <!-- Task: Add a div with class="highlight" below this comment.
+           Write one sentence of your own about CSS inside it.
+           Example: <div class="highlight">Your sentence here.</div>
+           It gets the same yellow background as TODO 4 without writing a new rule.
+      -->
+
+    </section>
+  </main>
+
+  <footer>
+    <p>When you're done: the whole page uses Roboto on a light gray background,
+       no links are underlined, the nav links are bold, two items are highlighted
+       yellow, and the featured paragraph is light text on a dark background.</p>
+  </footer>
+
+</body>
+</html>
