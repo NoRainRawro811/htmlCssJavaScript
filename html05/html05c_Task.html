@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title -->
+  <title>CSS Units Task</title>
+
+  <style>
+    /* Page setup (already done - do not change) */
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    /* ============================================================
+       STEP 1: Convert px to rem (divide by 16)
+       ============================================================ */
+
+    /* TODO Step 1a: change 40px to rem */
+    .title {
+      font-size: 2.5rem;
+    }
+
+    /* TODO Step 1b: change 24px to rem */
+    .subtitle {
+      font-size: 1.5rem;
+    }
+
+    /* TODO Step 1c: change 14px to rem */
+    .fine-print {
+      font-size: 0.875rem;
+    }
+
+    /* ============================================================
+       STEP 2: Predict nested em (do not change this rule)
+       ============================================================ */
+    .level {
+      font-size: 1.25em;
+      border-left: 3px solid tomato;
+      padding-left: 0.5rem;
+    }
+
+    /* ============================================================
+       STEP 3: Fix the shrinking menu
+       Change ONE unit so every item is the same size.
+       ============================================================ */
+
+    /* TODO Step 3: fix this rule */
+    .menu li {
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- STEP 1: The page should look the same after you convert to rem -->
+  <h2>Step 1: px to rem</h2>
+  <p class="title">Title (40px)</p>
+  <p class="subtitle">Subtitle (24px)</p>
+  <p class="fine-print">Fine print (14px)</p>
+
+  <!-- STEP 2 -->
+  <h2>Step 2: Predict nested em</h2>
+  <div class="level">Level 1
+    <div class="level">Level 2
+      <div class="level">Level 3</div>
+    </div>
+  </div>
+
+  <!-- TODO Step 2: Predict the size of each level. The root size is 16px.
+       Each level is 1.25 times the level around it. Show your math.
+
+       Level 1: 16 x 1.25 = 20 px
+       Level 2: 32 x 1.25 = 40 px
+       Level 3: 64 x 1.25 = 80 px
+  -->
+
+  <!-- STEP 3 -->
+  <h2>Step 3: Fix the shrinking menu</h2>
+  <ul class="menu">
+    <li>Home
+      <ul>
+        <li>Projects
+          <ul>
+            <li>Web Design
+              <ul>
+                <li>This text is getting hard to read</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- TODO Step 3: After your fix, answer:
+       What unit did you change it to? em
+       Why did the old version keep shrinking? If you mean didn't, it's 'cause it used rem and not em.
+  -->
+
+</body>
+</html>
