@@ -31,3 +31,12 @@ a {
   height: auto;   /* Maintains original aspect ratio without distortion */
   margin: 0 auto; /* Centers the video if you add a max-width container later */
 }
+#logo {
+    background-color:deepskyblue;
+    max-width: 50%; 
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100;
+}
