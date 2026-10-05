@@ -35,6 +35,4 @@ a {
     background-color:deepskyblue;
     max-width: 50%; 
     height: auto;
-    display: flex;
-    align-self:center;
 }
