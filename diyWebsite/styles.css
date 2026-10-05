@@ -3,6 +3,7 @@
 * { 
     background-color:black;
     color:deepskyblue;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 a {
     color:white;
@@ -33,6 +34,7 @@ a {
 }
 #logo {
     background-color:deepskyblue;
+    background: linear-gradient(to top, deepskyblue, pink, white, pink, deepskyblue);
     display: block;
     max-width: 50%;
     height: auto;
