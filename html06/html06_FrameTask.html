@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML06 Frame Task - The Box Model</title>
+  <!--
+    HTML06 PICTURE FRAME TASK
+
+    A framed picture is a box model you can see:
+      Content = the picture
+      Padding = the mat (the blank border around the picture)
+      Border  = the frame
+      Margin  = the wall space between frames
+
+    You will frame three pictures and hang them on a gallery wall.
+      Frame 1: you build it with Mr. M.
+      Frame 2: you build it on your own from a description.
+      Frame 3: you design it yourself.
+    Then you answer four questions at the bottom of the page.
+
+    Fill in every TODO. Open the page with Live Preview after each TODO to check your work.
+
+    This task uses px for padding, border, and margin so you can do the math.
+    Your real website still uses rem for padding and margin (Lesson 05).
+
+    Rename this file to html06_FrameTask_Lastname.html with your own last name.
+  -->
+  <style>
+    /* TODO 1: X-ray line.
+       Add this line here while you work:   * { outline: 1px solid red; }
+       Turn it into a comment (or delete it) before you turn the task in. */
+    * {
+      outline:1px solid red;
+    }
+
+    /* TODO 7 goes here later (box-sizing). Do NOT add it until you answer Questions 2 and 3. */
+
+
+    /* Already done for you */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #e8e1d5;   /* the wall color */
+      color: #333333;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    /* ===== THE WALL ===== */
+
+    /* TODO 2: Center the wall on the page (Walkthrough Section 5).
+       - max-width: 60rem
+       - margin: 0 auto     (0 top and bottom, auto left and right = centered)
+       - padding: 2rem      */
+    main {
+      max-width:60rem;
+      margin:0 auto;
+      padding:2rem;
+    }
+
+    /* ===== THE GALLERY SIGN ===== */
+
+    /* TODO 3: Style the gallery sign.
+       - width: 300px
+       - padding: 20px
+       - border: 5px solid #5d4037
+       - background-color: white
+       - text-align: center
+       - margin: 0 auto       (centers the sign, like the wall in TODO 2)
+       Then look at the sign and the striped ruler under it. The ruler is exactly 300px wide.
+       Is the sign the same width as the ruler? Questions 2 and 3 are about this. */
+    .sign {
+      width:300px;
+      padding:20px;
+      border:5px solid #5d4037;
+      background-color: white;
+      text-align: center;
+      margin: 0 auto;
+      background: linear-gradient(wheat, whitesmoke, white, whitesmoke, wheat);
+    }
+
+    /* Already done for you: a ruler exactly 300px wide, centered under the sign. Do not change it. */
+    .ruler {
+      width: 300px;
+      height: 10px;
+      margin: 0.5rem auto 2rem auto;
+      background: repeating-linear-gradient(90deg, #333333 0px, #333333 2px, #f9a825 2px, #f9a825 50px);
+    }
+
+    /* Already done for you: frames sit side by side on the wall.
+       You will learn about display on Wednesday. */
+    .frame {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    /* Already done for you: the "pictures." Each one is exactly 200px wide and 150px tall. */
+    .picture {
+      width: 200px;
+      height: 150px;
+    }
+    .sunset { background: linear-gradient(#ff7043, #ffca28 55%, #6d4c41 56%, #4e342e); }
+    .ocean  { background: linear-gradient(#81d4fa, #e1f5fe 45%, #0277bd 46%, #01579b); }
+    .forest { background: linear-gradient(#b3e5fc, #ffffff 50%, #2e7d32 51%, #1b5e20); }
+
+    .label {
+      text-align: center;
+      margin: 0.5rem 0 0 0;
+      font-size: 0.9rem;
+    }
+
+    /* ===== FRAME 1: build this one with Mr. M ===== */
+
+    /* TODO 4: Frame 1 is a light wood frame with a cream mat.
+       - background-color: #fffaf0       (the mat color. The background fills the padding.)
+       - padding: 30px                   (the mat: 30px on all 4 sides)
+       - border: 12px solid #a1887f      (the frame)
+       - margin: 20px                    (wall space around the frame)
+       After it works, try padding: 60px, then put it back to 30px.
+       Then try margin: 60px, then put it back to 20px.
+       What changed each time? */
+    .frame-one {
+      background-color: #fffaf0;
+      padding:30px;
+      border: 12px solid #a1887f;
+      margin:20px;
+    }
+
+    /* ===== FRAME 2: build this one on your own ===== */
+
+    /* TODO 5: Turn this description into CSS. Use the four properties from TODO 4.
+       - The mat is white, and it is wide: 40px on all 4 sides.
+       - The frame is thin and black: 4px, solid.
+       - There is 30px of wall space around the frame.  */
+    .frame-two {
+      background-color:white;
+      padding:40px;
+      border: 4px solid black;
+      margin:30px;
+    }
+
+    /* ===== FRAME 3: design your own ===== */
+
+    /* TODO 6: Design your own frame. Your rule must:
+       - set a background-color for the mat
+       - use padding with 2 or 4 values (shorthand)
+         Example: padding: 20px 40px;  is 20px top and bottom, 40px left and right.
+         Real mats are often wider at the bottom: padding: 30px 30px 50px 30px;
+       - set a border with a width, a style, and a color
+       - set a margin
+       Ideas for the border style: solid, double, ridge, groove, dashed.
+         ridge and groove look like carved wood. Try: border: 16px ridge goldenrod;
+       Optional: border-radius (rounded corners) and a different background color on .picture.  */
+    .frame-three {
+      background-color: #01579b;
+      padding:30px 40px;
+      border:1rem dashed #1b5e20;
+      margin:0 auto;
+    }
+
+    /* ===== QUESTIONS ===== */
+
+    /* Already done for you */
+    .questions {
+      background-color: white;
+      padding: 1rem 2rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Picture Frame Task</h1>
+
+  <main>
+
+    <!-- TODO (HTML): Replace "Lastname" with your own last name. -->
+    <div class="sign">The Lastname Gallery</div>
+    <div class="ruler"></div>
+
+    <div class="frame frame-one">
+      <div class="picture sunset"></div>
+      <p class="label">Frame 1: Sunset</p>
+    </div>
+
+    <div class="frame frame-two">
+      <div class="picture ocean"></div>
+      <p class="label">Frame 2: Ocean</p>
+    </div>
+
+    <!-- TODO (HTML, optional): Give your frame a title. You may replace the forest picture with
+         an image of your own:  <img class="picture" src="yourImage.jpg" alt="describe the image">
+         Keep class="picture" so it stays 200px by 150px. -->
+    <div class="frame frame-three">
+      <div class="picture forest"></div>
+      <p class="label">Frame 3: My Design</p>
+    </div>
+
+    <section class="questions">
+      <h2>Questions</h2>
+      <p>Type your answers in place of the word ANSWER. Show your math for Questions 1-3.</p>
+
+      <!-- Question 1: Frame 2 math. Do the math BEFORE you check. -->
+      <h3>1. How wide is Frame 2?</h3>
+      <p>The picture is 200px wide. Frame 2 has a 40px mat (padding) and a 4px frame (border) on each side.
+         How wide is Frame 2 on the screen, from the outside edge of the frame on the left to the outside edge on the right? Do not count the wall space.</p>
+      <p><strong>Answer:</strong> ANSWER</p>
+
+      <!-- Question 2: Do the math BEFORE you add TODO 7. -->
+      <h3>2. Why is the sign wider than the ruler?</h3>
+      <p>The sign has width: 300px, padding: 20px, and a 5px border. The ruler is exactly 300px wide.
+         How wide is the sign on the screen? Why is it wider than 300px?</p>
+      <p><strong>Answer:</strong> ANSWER</p>
+
+      <!-- Now go up to TODO 7 in the style block and add:
+             * {
+               box-sizing: border-box;
+             }
+           Look at the sign and the ruler again. Then answer Question 3. -->
+      <h3>3. What did box-sizing change?</h3>
+      <p>After TODO 7, how wide is the sign on the screen? The padding and border are the same. Where did they go?
+         (Hint: Walkthrough Section 4.)</p>
+      <p><strong>Answer:</strong> ANSWER</p>
+
+      <h3>4. Which property would you change?</h3>
+      <p>a. A customer wants a wider mat on Frame 1. Which CSS property do you change?<br>
+         b. A customer wants more space between the frames on the wall. Which CSS property do you change?<br>
+         c. A customer wants a thicker frame. Which CSS property do you change?</p>
+      <p><strong>Answer a:</strong> ANSWER<br>
+         <strong>Answer b:</strong> ANSWER<br>
+         <strong>Answer c:</strong> ANSWER</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
