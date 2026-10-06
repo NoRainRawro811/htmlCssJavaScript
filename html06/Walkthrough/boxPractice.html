@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;                  /* remove the browser's default space around the page */
+      background-color: #eeeeee;
+    }
+    * {
+      box-sizing:border-box;
+      outline:1px solid red;
+    }
+    /* Add each new rule below this line */
+    .card {
+      width:300px;
+      background-color: white;
+      padding:1rem 2rem;
+      border:2px solid oklab(51.341% -0.03963 -0.15538);
+      border-radius:8px;
+      margin:0 auto;
+    }
+    .card h2 {
+      margin-top:0;
+    }
+    main {
+      max-width:600px;
+      margin:0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Box Model Practice</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Card One</h2>
+      <p>A card is a box with a heading and some text.</p>
+    </div>
+    <div class="card">
+      <h2>Card Two</h2>
+      <p>We will use cards to learn padding, border, and margin.</p>
+    </div>
+  </main>
+</body>
+</html>
