@@ -12,16 +12,22 @@
     }
     * {
       box-sizing:border-box;
-      outline:1px solid red;
+      /*outline:1px solid red;*/
     }
     /* Add each new rule below this line */
     .card {
-      width:300px;
+      /*width:300px;
       background-color: white;
       padding:1rem 2rem;
       border:2px solid oklab(51.341% -0.03963 -0.15538);
       border-radius:8px;
-      margin:0 auto;
+      margin:0 auto;*/
+      display:inline-block;
+      vertical-align: top;
+      width:15rem;
+      border: 2px solid blue;
+      background-color: white;
+      border-radius: 8px;
     }
     .card h2 {
       margin-top:0;
@@ -29,6 +35,20 @@
     main {
       max-width:600px;
       margin:0 auto;
+    }
+    nav a {
+      display: inline-block;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      background-color: greenyellow;
+      color: red;
+      text-decoration: none;
+      border-radius: 12px;
+      border: 5px solid green;
+    }
+    nav a:hover {
+      background-color: red;
+      color: black;
     }
   </style>
 </head>
