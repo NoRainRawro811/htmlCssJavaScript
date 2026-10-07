@@ -34,7 +34,7 @@ a {
 }
 #logo {
     background-color:deepskyblue;
-    background: linear-gradient(to top, deepskyblue, pink, white, pink, deepskyblue);
+    background: linear-gradient(to top, deepskyblue, white, deepskyblue);
     display: block;
     max-width: 50%;
     height: auto;
@@ -46,5 +46,17 @@ a {
     -ms-user-select: none;
 }
 nav a {
-    --placeholder:1
+    display: inline-block;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: black;
+    color: deepskyblue;
+    text-decoration: none;
+    border-radius: 12px;
+    border: 5px solid deepskyblue;
+}
+nav a:hover {
+    --placeholder:1;
+    background-color: black;
+    color: yellow;
 }
