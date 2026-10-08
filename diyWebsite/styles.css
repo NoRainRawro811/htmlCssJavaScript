@@ -60,3 +60,8 @@ nav a:hover {
     background-color: black;
     color: yellow;
 }
+.to-top {
+    position:fixed;
+    bottom:1rem;
+    right:1rem;
+}
