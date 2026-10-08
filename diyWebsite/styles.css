@@ -34,9 +34,9 @@ a {
 }
 #logo {
     background-color:deepskyblue;
-    background: linear-gradient(to top, deepskyblue, white, deepskyblue);
+    background: linear-gradient(to top, black, black, deepskyblue, black, black);
     display: block;
-    max-width: 50%;
+    max-width: 100%; /*Changed from 50%*/ 
     height: auto;
     margin: 0 auto;
     user-select: none;
