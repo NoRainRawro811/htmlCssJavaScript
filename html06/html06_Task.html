@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML06 Task - Box Model, Display, and Position</title>
+  <!--
+    HTML06 PRACTICE TASK
+    Fill in every TODO. Most TODOs are CSS in the style block.
+    TODOs 6, 11, and 12 also have one line to add in the HTML.
+    Use rem for padding, margin, and font sizes. Use px for borders.
+    Open the page in the browser after each TODO to check your work.
+  -->
+  <style>
+    /* TODO 1: Add a universal rule (*) with two lines:
+       - box-sizing: border-box
+       - outline: 1px solid red   (X-ray trick: shows every box while you work.
+                                   Delete this line before you turn the task in.) */
+
+
+    /* ===== Already done for you ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333333;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem 0;
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #dddddd;
+      color: #1565c0;
+    }
+
+    .intro p {
+      margin: 0;
+      padding: 1rem 0;
+      line-height: 1.5;
+    }
+
+    .boxes-container {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333333;
+      color: white;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* ===== HEADER ===== */
+
+    /* TODO 2: Make the header a sticky header.
+       - position: sticky
+       - top: 0
+       - z-index: 10
+       - background-color: #1565c0
+       - color: white
+       - padding: 1rem 2rem */
+    header {
+      --placeholder:1;
+    }
+
+    /* TODO 3: Make the nav links look like buttons.
+       - display: inline-block   (so padding works on all sides)
+       - padding: 0.5rem 1rem
+       - margin-right: 0.5rem
+       - background-color: #0d47a1
+       - color: white
+       - text-decoration: none
+       - border-radius: 4px */
+    nav a {
+      --placeholder:1;
+    }
+
+    /* ===== MAIN AREA ===== */
+
+    /* TODO 4: Center the main area on the page.
+       - max-width: 60rem
+       - margin: 0 auto   (auto left and right = centered)
+       - padding: 2rem */
+    main {
+      --placeholder:1;
+    }
+
+    /* TODO 5: Style the intro card.
+       - width: 30rem  (with border-box, this INCLUDES padding and border)
+       - padding: 1.5rem
+       - border: 2px solid #333333
+       - margin: 0 auto 2rem auto   (centered, with 2rem of space under it)
+       - background-color: white
+       - border-radius: 8px
+       - position: relative   (so the badge in TODO 6 is placed inside this card) */
+    .intro {
+      --placeholder:1;
+    }
+
+    /* TODO 6: Add the NEW badge.
+       HTML: add <span class="badge">NEW</span> as the first thing in the intro card.
+       CSS:
+       - position: absolute
+       - top: 0.5rem
+       - right: 0.5rem
+       - background-color: #ff9800
+       - color: white
+       - padding: 0.25rem 0.5rem
+       - border-radius: 4px
+       - font-size: 0.75rem */
+    .badge {
+      --placeholder:1;
+    }
+
+    /* ===== THREE SPACING BOXES ===== */
+
+    /* TODO 7: Shared styles for all three boxes.
+       - display: inline-block   (side by side)
+       - vertical-align: top
+       - width: 14rem
+       - background-color: white
+       - text-align: left */
+    .box-1, .box-2, .box-3 {
+      --placeholder:1;
+    }
+
+    /* TODO 8: Give each box different spacing:
+       .box-1: padding: 0.5rem, margin: 0.25rem, border: 1px solid #1976d2
+       .box-2: padding: 1rem,   margin: 0.5rem,  border: 2px solid #f57c00
+       .box-3: padding: 2rem,   margin: 1rem,    border: 3px solid #7b1fa2
+       Question: why are all three boxes the same width even though their
+       padding and border are different? Answer in the comment below. */
+    .box-1 {
+      --placeholder:1;
+    }
+
+    .box-2 {
+      --placeholder:1;
+    }
+
+    .box-3 {
+      --placeholder:1;
+    }
+
+    /* Answer to the TODO 8 question: */
+
+
+    /* ===== QUICK LINKS ===== */
+
+    /* TODO 9: Style the quick links box and its links.
+       aside:   background-color: white, padding: 1rem 1.5rem,
+                margin-top: 2rem, border-left: 4px solid #1565c0
+       aside a: display: block (each link on its own row), padding: 0.5rem 0,
+                color: #1565c0, text-decoration: none,
+                border-bottom: 1px solid #eeeeee */
+    aside {
+      --placeholder:1;
+    }
+
+    aside a {
+      --placeholder:1;
+    }
+
+    /* ===== HOVER EFFECTS ===== */
+
+    /* TODO 10: Add :hover rules (the style changes while the mouse is on it).
+       - nav a:hover        background-color: #ff9800
+       - the three boxes    background-color: #fff3e0
+       - aside a:hover      padding-left: 0.5rem and font-weight: bold */
+
+
+    /* ===== HIDE AND FIXED ===== */
+
+    /* TODO 11: Hide the extra paragraph.
+       CSS: a .hidden rule with display: none
+       HTML: add class="hidden" to the paragraph that says it should be hidden. */
+
+
+    /* TODO 12: Make a "Back to top" link that stays in the corner while scrolling.
+       HTML: add <a href="#top" class="to-top">Back to top</a> right above </body>
+       CSS:
+       - position: fixed
+       - bottom: 1rem
+       - right: 1rem
+       - background-color: #1565c0
+       - color: white
+       - padding: 0.5rem 1rem
+       - text-decoration: none
+       - border-radius: 4px */
+    .to-top {
+      --placeholder:1;
+    }
+  </style>
+</head>
+<body>
+  <header id="top">
+    <h1>Box Model Practice</h1>
+    <nav>
+      <a href="#intro">Intro</a>
+      <a href="#boxes">Boxes</a>
+      <a href="#links">Quick Links</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Intro card -->
+    <section class="intro" id="intro">
+      <h2>What Is the Box Model?</h2>
+      <p>Every element is a box with four layers: content, padding, border, and margin. Padding is space inside the border. Margin is space outside the border.</p>
+      <p>This paragraph should be hidden when you are done.</p>
+    </section>
+
+    <!-- Three boxes with different spacing -->
+    <section id="boxes">
+      <h2>Box Model Variations</h2>
+      <div class="boxes-container">
+        <div class="box-1">
+          <h3>Box 1: Small</h3>
+          <p>Padding 0.5rem | Margin 0.25rem | Border 1px</p>
+        </div>
+
+        <div class="box-2">
+          <h3>Box 2: Medium</h3>
+          <p>Padding 1rem | Margin 0.5rem | Border 2px</p>
+        </div>
+
+        <div class="box-3">
+          <h3>Box 3: Large</h3>
+          <p>Padding 2rem | Margin 1rem | Border 3px</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick links -->
+    <aside id="links">
+      <h2>Quick Links</h2>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model">MDN: The Box Model</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">MDN: display</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">MDN: position</a>
+      <a href="https://validator.w3.org/">W3C Validator</a>
+    </aside>
+
+    <!-- Extra text so the page is long enough to scroll.
+         Scroll down: the header should stay at the top. -->
+    <section>
+      <h2>Why Spacing Matters</h2>
+      <p>Good spacing makes a page easy to read. Padding keeps text away from the edge of its box. Margin keeps boxes away from each other.</p>
+      <p>When a page looks crowded, add padding and margin. When a page looks wrong and you can't tell why, turn on the X-ray trick and look at the red lines.</p>
+      <p>Keep scrolling. The header should stay at the top of the window, and the Back to top link should stay in the corner.</p>
+      <p>Sticky keeps its space in the page. Fixed leaves the page flow and sits on the window.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Medina County Career Center</p>
+  </footer>
+
+</body>
+</html>
