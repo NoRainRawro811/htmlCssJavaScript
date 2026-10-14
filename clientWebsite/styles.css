@@ -1,3 +1,6 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
 .navbar {
     display:flex; 
     justify-content: space-between;
@@ -9,14 +12,16 @@
     display: inline-block;
     padding:.5rem;
     margin-right:.5rem;
-    background-color: limegreen;
-    color:black;
-    font-family: Comic Sans MS, Comic Sans, Cursive;
+    background-color: blue;
+    color:beige;
     text-decoration: none;
     border-radius: 12px;
-    border: 5px solid limegreen;
+    border: 5px solid blue;
 }
     nav a:hover {
     color:yellow;
     background-color: black;
+}
+.logo {
+    color:white;
 }
