@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- IMAGES: this file uses pictures from the images/ folder.
+     Get them from GitHub (html07_flexboxResponsive/images) and put them in a
+     folder named images next to this file, or the pictures won't show. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- TODO 1: Add the viewport meta tag here.
+       Without it, a phone shows a tiny zoomed-out desktop page. -->
+
+  <title>html07 Task - Flexbox and Responsive Design</title>
+  <style>
+    /* =====================================================
+       html07 Task: Flexbox and Responsive Design
+       Fill in every TODO. The HTML is already done.
+       The only CSS you write goes inside the empty rules.
+       Test phone size in Live Preview: Developer Tools > device toolbar
+       (phone-and-tablet icon), then pick a phone or type a width like 375.
+       Developer Tools (Styles pane) shows whether the @media rule is applied.
+       ===================================================== */
+
+    /* ---------- Starter styles (already done) ---------- */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: 75rem;          /* page never gets wider than 1200px */
+      margin: 0 auto;            /* center the page */
+      padding: 1rem;
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 0.5rem;
+    }
+
+    .navbar {
+      background-color: #2c3e50;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem;
+    }
+
+    .nav-links a:hover {
+      background-color: #3498db;
+      border-radius: 0.25rem;
+    }
+
+    .card,
+    .testimonial,
+    .sidebar,
+    .article {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #3498db;
+    }
+
+    .photo {
+      margin: 0;                 /* figure has a default margin; remove it */
+      background-color: #fff;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+
+    .photo figcaption {
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    .star {
+      color: #f1c40f;
+      font-size: 1.25rem;
+    }
+
+    .footer {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer a {
+      color: #85c1e9;
+    }
+
+    /* ---------- Your work starts here ---------- */
+
+    /* TODO 2: Responsive images.
+       Make every image shrink to fit its box and keep its shape:
+       - max-width: 100%
+       - height: auto
+       - display: block   (removes the small gap under an image) */
+    img {
+      --placeholder:1;
+    }
+
+    /* TODO 3: Flexbox navigation bar.
+       Put the logo on the left and the links on the right:
+       - display: flex
+       - justify-content: space-between   (push the two ends apart)
+       - align-items: center              (line them up in the middle, top to bottom) */
+    .navbar {
+      --placeholder:1;
+    }
+
+    /* TODO 4: Put the nav links in a row with space between them:
+       - display: flex
+       - gap: 1rem */
+    .nav-links {
+      --placeholder:1;
+    }
+
+    /* TODO 5: Card row.
+       Put the three service cards side by side with space between:
+       - display: flex
+       - gap: 1.5rem */
+    .card-container {
+      --placeholder:1;
+    }
+
+    /* TODO 6: Make every card the same width.
+       - flex: 1   (each card grows to take an equal share of the row) */
+    .card {
+      --placeholder:1;
+    }
+
+    /* TODO 7: Photo gallery that wraps.
+       Let the photos flow onto a new line when the row is full:
+       - display: flex
+       - flex-wrap: wrap
+       - gap: 1rem */
+    .gallery {
+      --placeholder:1;
+    }
+
+    /* TODO 8: Gallery photo size.
+       - flex: 1             (grow to fill the row)
+       - min-width: 12rem    (but never get skinnier than 12rem, so they wrap) */
+    .photo {
+      --placeholder:1;
+    }
+
+    /* TODO 9: Testimonials.
+       Same idea as the gallery: a row that wraps.
+       - display: flex
+       - flex-wrap: wrap
+       - gap: 1.5rem
+       Then give each .testimonial flex: 1 and min-width: 15rem. */
+    .testimonials {
+      --placeholder:1;
+    }
+
+    .testimonial {
+      --placeholder:1;
+    }
+
+    /* TODO 10: Star rating.
+       Line up the five stars in a row with a small gap:
+       - display: flex
+       - gap: 0.25rem */
+    .stars {
+      --placeholder:1;
+    }
+
+    /* TODO 11: CSS Grid (recognition level).
+       Grid lays things out in rows AND columns at the same time.
+       Make a two-column layout: a 15rem sidebar and an article that takes the rest.
+       - display: grid
+       - grid-template-columns: 15rem 1fr
+       - gap: 1.5rem */
+    .blog-layout {
+      --placeholder:1;
+    }
+
+    /* TODO 12: Footer.
+       Spread the three footer sections across the footer, and let them wrap:
+       - display: flex
+       - justify-content: space-between
+       - flex-wrap: wrap
+       - gap: 2rem */
+    .footer {
+      --placeholder:1;
+    }
+
+    /* TODO 13: Media query for phones.
+       Write @media (max-width: 768px) { ... } and inside it:
+       - .navbar: flex-direction: column; gap: 0.5rem;   (logo on top, links under it)
+       - .card-container: flex-direction: column;        (cards stack)
+       - .blog-layout: grid-template-columns: 1fr;       (one column)
+       - .footer: flex-direction: column;                (sections stack)
+       Then test it with the device toolbar at a phone width. */
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar: the logo and the links group are the two flex items -->
+  <nav class="navbar">
+    <div class="logo">Summit Web Studio</div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#blog">Blog</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Websites That Work on Every Screen</h1>
+
+    <!-- Section 1: service cards (flexbox row, equal widths) -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Clean, modern pages that look good on a phone, a tablet, and a desktop.</p>
+        </div>
+        <div class="card">
+          <h3>Development</h3>
+          <p>Fast, well-organized code that is easy to update later.</p>
+        </div>
+        <div class="card">
+          <h3>Consulting</h3>
+          <p>Help planning a new site, from the first sketch to launch day.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: photo gallery (flexbox with wrap and gap) -->
+    <section id="work">
+      <h2>Our Work</h2>
+      <div class="gallery">
+        <figure class="photo">
+          <img src="images/sunset-beach.png" alt="Sunset over a beach" width="400" height="300">
+          <figcaption>Sunset Beach</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/mountain-peak.png" alt="Snowy mountain peak" width="400" height="300">
+          <figcaption>Mountain Peak</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/city-lights.png" alt="City skyline at night" width="400" height="300">
+          <figcaption>City Lights</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/forest-valley.png" alt="Green forest valley" width="400" height="300">
+          <figcaption>Forest Valley</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/lake-mountain.png" alt="Lake in front of a mountain" width="400" height="300">
+          <figcaption>Lake and Mountain</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="images/historic-building.png" alt="Old stone building" width="400" height="300">
+          <figcaption>Historic Building</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Section 3: testimonials (flexbox wrap) with star ratings (flexbox row) -->
+    <section id="reviews">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>"They delivered exactly what we needed, and on time."</p>
+          <p><strong>- Sarah J.</strong></p>
+          <div class="stars">
+            <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>"Our site finally works on phones. Customers noticed right away."</p>
+          <p><strong>- Michael C.</strong></p>
+          <div class="stars">
+            <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>"Clear communication from start to finish."</p>
+          <p><strong>- Emma D.</strong></p>
+          <div class="stars">
+            <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: sidebar + article (CSS Grid, two columns) -->
+    <section id="blog">
+      <h2>From the Blog</h2>
+      <div class="blog-layout">
+        <aside class="sidebar">
+          <h3>Topics</h3>
+          <ul>
+            <li><a href="#blog">Flexbox</a></li>
+            <li><a href="#blog">Media Queries</a></li>
+            <li><a href="#blog">Responsive Images</a></li>
+          </ul>
+        </aside>
+        <article class="article">
+          <h3>Why Every Page Needs the Viewport Tag</h3>
+          <img src="images/mobile-first.png" alt="A page shown on a phone, a tablet, and a desktop" width="600" height="300">
+          <p>Phones pretend to be wide desktop screens unless the page tells them not to.
+             The viewport meta tag tells the phone to use its real width, so media queries work.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: three sections spread out with flexbox -->
+  <footer class="footer">
+    <div class="footer-section">
+      <h3>Summit Web Studio</h3>
+      <p>Medina, Ohio</p>
+    </div>
+    <div class="footer-section">
+      <h3>Links</h3>
+      <p><a href="#services">Services</a> | <a href="#work">Our Work</a> | <a href="#blog">Blog</a></p>
+    </div>
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>info@example.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>

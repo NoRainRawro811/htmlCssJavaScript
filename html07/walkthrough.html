@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport tag: explained in Step 11 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html07 Walkthrough</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    main {
+      max-width: 60rem;   /* page stops growing at 960px */
+      margin: 0 auto;     /* center it */
+      padding: 1rem;
+    }
+
+    /* Your walkthrough CSS goes below this line */
+
+  </style>
+</head>
+<body>
+  <!-- Nav bar: two flex items (the logo and the links group) -->
+  <nav class="navbar">
+    <div class="logo">My Site</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Flexbox Practice</h1>
+
+    <!-- Three cards: will sit in a row -->
+    <div class="cards">
+      <div class="card"><h2>Fast</h2><p>Loads quickly on any device.</p></div>
+      <div class="card"><h2>Clean</h2><p>Easy to read and easy to use.</p></div>
+      <div class="card"><h2>Responsive</h2><p>Works on phones, tablets, and desktops.</p></div>
+    </div>
+
+    <!-- Six photos: will wrap onto more than one row -->
+    <div class="gallery">
+      <img src="images/photo-1.png" alt="Sample photo 1">
+      <img src="images/photo-2.png" alt="Sample photo 2">
+      <img src="images/photo-3.png" alt="Sample photo 3">
+      <img src="images/photo-4.png" alt="Sample photo 4">
+      <img src="images/photo-5.png" alt="Sample photo 5">
+      <img src="images/photo-6.png" alt="Sample photo 6">
+    </div>
+  </main>
+</body>
+</html>
