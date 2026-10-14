@@ -1,4 +1,4 @@
-# Site Plan: Business Name
+# Site Plan: Home Harmony
 
 ## The Client
 Ava [ERROR: INFORMATION UNAVAILABLE], Home Harmony, does chores for people to a large extent. It's intentionally vegue, it can be assumed that working on this is a case-by-case basis. 
