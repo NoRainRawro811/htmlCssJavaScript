@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Viewport tag: explained in Step 11 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>html07 Walkthrough</title>
+  <title>html07 Flexbox</title>
   <style>
     * { box-sizing: border-box; }
 
@@ -20,9 +19,9 @@
       padding: 1rem;
     }
 
-    /* Your walkthrough CSS goes below this line */
+    /* ===== Your CSS goes below this line ===== */
 
-    nav a {
+        nav a {
         display: inline-block;
         padding:.5rem;
         margin-right:.5rem;
@@ -37,22 +36,11 @@
         color:limegreen;
         background-color: black;
     }
-    .cards {
-        display:flex;
-        flex-direction: column; 
-        justify-content: space-between;
-    }
-    .center-box {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        height:10rem;
-    }
 
   </style>
 </head>
 <body>
-  <!-- Nav bar: two flex items (the logo and the links group) -->
+  <!-- Nav bar: two items (the logo and the links group) -->
   <nav class="navbar">
     <div class="logo">My Site</div>
     <div class="nav-links">
@@ -66,14 +54,14 @@
   <main>
     <h1>Flexbox Practice</h1>
 
-    <!-- Three cards: will sit in a row -->
+    <!-- Three cards -->
     <div class="cards">
       <div class="card"><h2>Fast</h2><p>Loads quickly on any device.</p></div>
       <div class="card"><h2>Clean</h2><p>Easy to read and easy to use.</p></div>
       <div class="card"><h2>Responsive</h2><p>Works on phones, tablets, and desktops.</p></div>
     </div>
 
-    <!-- Six photos: will wrap onto more than one row -->
+    <!-- Six photos -->
     <div class="gallery">
       <img src="images/photo-1.png" alt="Sample photo 1">
       <img src="images/photo-2.png" alt="Sample photo 2">
