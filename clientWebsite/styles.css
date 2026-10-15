@@ -38,3 +38,8 @@ body {
 .nav-links {
     display: flex;
 }
+.to-top {
+    position:fixed;
+    bottom:1rem;
+    right:1rem;
+}
