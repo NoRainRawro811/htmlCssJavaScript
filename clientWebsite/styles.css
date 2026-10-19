@@ -2,7 +2,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 .navbar {
-    display:flex; 
+    display:flex;
     justify-content: space-between;
     padding:1rem 2rem;
     align-items: center;
@@ -43,7 +43,7 @@ footer nav a {
     border: 5px solid green;
 }
 footer nav a:hover {
-    color: aqua; 
+    color: aqua;
     background-color: green;
 }
 body {
@@ -55,14 +55,14 @@ body {
 .to-top {
     position:fixed;
     bottom:1rem;
-    right:1rem; 
+    right:1rem;
 }
 footer {
     display: grid;
     background-color: aqua;
-    padding: 20px; 
+    padding: 20px;
     width: 97.65%;
-    grid-column-start: auto; 
+    grid-column-start: auto;
     grid-column-end: auto;
     min-height:35vh;
 }
