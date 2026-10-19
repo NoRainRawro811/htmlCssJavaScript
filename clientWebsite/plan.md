@@ -1,7 +1,7 @@
 # Site Plan: Home Harmony
 
 ## The Client
-Ava [ERROR: INFORMATION UNAVAILABLE], Home Harmony, does chores for people to a large extent. It's intentionally vegue, it can be assumed that working on this is a case-by-case basis. 
+Ava Valentino, Home Harmony, does chores for people to a large extent. It's intentionally vegue, it can be assumed that working on this is a case-by-case basis. 
 
 ## The Goal
 Booking-based, read up on the service, visit socials, etc. 
@@ -14,7 +14,7 @@ For each page, write one line about what goes on it. You only start building the
 ## Branding 
 You might need to have a follow-up discussion with your client if you didn't get these details:
 
-- Colors: Blue, beige, green, subject to change, no pastels 
+- Colors: Blues, greys, greens, subject to change, no pastels 
 - Fonts: Probably Times New Roman (This is not something she brought up) 
 - Logo: In images folder 
 

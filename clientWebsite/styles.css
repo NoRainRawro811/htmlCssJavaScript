@@ -6,22 +6,22 @@
     justify-content: space-between;
     padding:1rem 2rem;
     align-items: center;
-    background-color:bisque;
+    background-color:#e6e6e6;
     align-items: center;
 }
     nav a {
     display: inline-block;
     padding:.5rem;
     margin-right:.5rem;
-    background-color: bisque;
+    background-color: #e6e6e6;
     color:black;
     text-decoration: none;
     border-radius: 12px;
-    border: 5px solid green;
+    border: 5px solid deepskyblue;
 }
     nav a:hover {
-    color:bisque;
-    background-color: green;
+    color:#e6e6e6;
+    background-color: deepskyblue;
 }
 #logoB {
     display: flex;
@@ -32,8 +32,22 @@
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+footer nav a {
+    display: inline-block;
+    padding:.5rem;
+    margin-right:.5rem;
+    background-color: aqua;
+    color:black;
+    text-decoration: none;
+    border-radius: 12px;
+    border: 5px solid green;
+}
+footer nav a:hover {
+    color: aqua; 
+    background-color: green;
+}
 body {
-    background-color: beige;
+    background-color: #b0b0b0;
 }
 .nav-links {
     display: flex;
@@ -41,5 +55,20 @@ body {
 .to-top {
     position:fixed;
     bottom:1rem;
-    right:1rem;
+    right:1rem; 
+}
+footer {
+    display: inline-block;
+    background-color: aqua;
+    padding: 20px; 
+    width: 94%; 
+    min-height:35vh;
+}
+footer p {
+    text-align: center;
+    padding:12px;
+}
+footer nav {
+    text-align: center;
+    padding:12px;
 }
