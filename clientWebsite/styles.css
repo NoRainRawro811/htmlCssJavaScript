@@ -58,10 +58,12 @@ body {
     right:1rem; 
 }
 footer {
-    display: inline-block;
+    display: grid;
     background-color: aqua;
     padding: 20px; 
-    width: 94%; 
+    width: 97.65%;
+    grid-column-start: auto; 
+    grid-column-end: auto;
     min-height:35vh;
 }
 footer p {
