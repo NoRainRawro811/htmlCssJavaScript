@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Sketch</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+        "header header"
+        "main   ad"
+        "main   qna"
+        "footer footer";
+      gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .box {
+      border: 2px solid #000;
+      background-color: #fff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 120px;
+    }
+
+    .header {
+      grid-area: header;
+      min-height: 150px;
+    }
+
+    .main {
+      grid-area: main;
+      min-height: 300px;
+    }
+
+    .ad {
+      grid-area: ad;
+    }
+
+    .qna {
+      grid-area: qna;
+    }
+
+    .footer {
+      grid-area: footer;
+      min-height: 100px;
+    }
+
+    .number {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .label {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <header class="box header">
+      <div class="number">1</div>
+      <div class="label">Header</div>
+    </header>
+
+    <main class="box main">
+      <div class="number">4</div>
+      <div class="label">Main</div>
+    </main>
+
+    <aside class="box ad">
+      <div class="number">5</div>
+      <div class="label">AD for booking</div>
+    </aside>
+
+    <section class="box qna">
+      <div class="number">3</div>
+      <div class="label">Q&amp;A</div>
+    </section>
+
+    <footer class="box footer">
+      <div class="number">2</div>
+      <div class="label">Footer</div>
+    </footer>
+  </div>
+
+</body>
+</html>

@@ -58,11 +58,10 @@ body {
     right:1rem;
 }
 footer {
-    display: block;
+    display: grid;
     background-color: aqua;
     padding: 20px;
-    width: auto;
-    height:auto;
+    grid-area: footer;
     min-height:35vh;
 }
 footer p {
