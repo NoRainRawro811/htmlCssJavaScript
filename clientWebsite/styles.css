@@ -56,6 +56,11 @@ body {
     position:fixed;
     bottom:1rem;
     right:1rem;
+    background:rgb(230, 230, 230, 0.8);
+}
+.to-top a:hover {
+    background: green;
+    color:#e6e6e6;
 }
 footer {
     display: grid;
