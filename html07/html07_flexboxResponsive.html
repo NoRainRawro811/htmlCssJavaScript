@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html07 Responsive</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    main {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #2c3e50;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+
+    .card {
+      flex: 1;
+      background-color: #fff;
+      padding: 1.5rem;
+      border: 2px solid #2c3e50;
+      border-radius: 8px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .gallery img {
+      flex: 1;
+      min-width: 12rem;
+    }
+
+    /* ===== MARKER A: new rules go here (Steps 3 and 6) ===== */
+    img {
+        max-width: 100%; 
+        height: auto;
+        display: block;
+    }
+
+    /* ===== MARKER B: media query goes here (Steps 4 and 7) ===== */
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">My Site</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Responsive Practice</h1>
+
+    <div class="cards">
+      <div class="card"><h2>Fast</h2><p>Loads quickly on any device.</p></div>
+      <div class="card"><h2>Clean</h2><p>Easy to read and easy to use.</p></div>
+      <div class="card"><h2>Responsive</h2><p>Works on phones, tablets, and desktops.</p></div>
+    </div>
+
+    <div class="gallery">
+      <img src="images/photo-1.png" alt="Sample photo 1">
+      <img src="images/photo-2.png" alt="Sample photo 2">
+      <img src="images/photo-3.png" alt="Sample photo 3">
+      <img src="images/photo-4.png" alt="Sample photo 4">
+      <img src="images/photo-5.png" alt="Sample photo 5">
+      <img src="images/photo-6.png" alt="Sample photo 6">
+    </div>
+
+    <!-- ===== MARKER C: grid HTML goes here (Step 6) ===== -->
+
+  </main>
+</body>
+</html>
