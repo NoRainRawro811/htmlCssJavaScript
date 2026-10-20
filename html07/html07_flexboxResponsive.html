@@ -76,7 +76,30 @@
         display: block;
     }
 
+    .page-layout {
+    display: grid;                      /* turn on grid */
+    grid-template-columns: 15rem 1fr;   /* first column is 15rem; 1fr fills the remaining space */
+                                        /* 1fr 1fr = two equal columns */
+                                        /* 1fr 2fr = two columns; second gets twice the space */
+    gap: 1.5rem;                         /* space between columns and rows */
+    margin-top: 1.5rem;                  /* add space above the grid */
+    }
+
+    /* Give both boxes a border so you can see the two columns */
+    .page-layout aside,
+    .page-layout section {
+    background-color: #fff;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    padding: 1rem;
+    }
+
+    /* Make the sidebar a different color */
+    .page-layout aside {
+    background-color: #dfe6ec;
+    }
     /* ===== MARKER B: media query goes here (Steps 4 and 7) ===== */
+    
     @media (max-width: 768px) {
     .navbar {
         flex-direction: column;   /* logo on top, links underneath */
