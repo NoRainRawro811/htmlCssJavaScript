@@ -82,3 +82,35 @@ header {
   min-width: 15rem;
   margin: 0;         /* figure has a built-in margin; gap does the spacing now */
 }
+/* Every image shrinks to fit its box and keeps its shape */
+img {
+  max-width: 100%;   /* never wider than its box */
+  height: auto;      /* keep the shape (no squishing) */
+  display: block;    /* remove the small gap under the image */
+}
+
+/* Same idea for the promo video on the Home page */
+video {
+  max-width: 100%;
+  height: auto;
+}
+/* ===== Phones: 768px wide and narrower ===== */
+@media (max-width: 768px) {
+
+  /* Header: site name on top, nav underneath */
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Nav links: stack them (or use flex-wrap: wrap if they fit two to a row) */
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Gallery: one photo per row */
+  .gallery {
+    flex-direction: column;
+  }
+}
