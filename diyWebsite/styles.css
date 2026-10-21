@@ -54,6 +54,7 @@ nav a {
     text-decoration: none;
     border-radius: 12px;
     border: 5px solid deepskyblue;
+    margin:5px;
 }
 nav a:hover {
     --placeholder:1;
@@ -64,4 +65,7 @@ nav a:hover {
     position:fixed;
     bottom:1rem;
     right:1rem;
+}
+header {
+    display:flexbox;
 }
