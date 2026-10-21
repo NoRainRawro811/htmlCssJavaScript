@@ -69,3 +69,16 @@ nav a:hover {
 header {
     display:flexbox;
 }
+/* Gallery: photos in a row that wraps */
+.gal {
+  display: flex;
+  flex-wrap: wrap;   /* extra photos drop to the next row */
+  gap: 1rem;         /* space between photos */
+}
+
+/* Each photo box grows to fill the row but never gets narrower than 15rem */
+.gal fig {
+  flex: 1;
+  min-width: 15rem;
+  margin: 0;         /* figure has a built-in margin; gap does the spacing now */
+}
