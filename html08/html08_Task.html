@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Camp Registration Task</title>
+
+  <!--
+    html08 Practice Task: Coding Camp Registration Form
+
+    Part 1 (HTML): build the form in the <body> by following TODO 1 - TODO 9.
+    Part 2 (CSS):  style it in the <style> block below by following TODO 10 - TODO 20.
+    Part 3 (Test): follow TODO 21 at the bottom of the page.
+
+    Use the walkthrough (html08_Walkthrough.md) if you get stuck.
+    Save this file in your html08 folder and push it with GitHub Desktop when done.
+  -->
+
+  <style>
+    /* ================= PART 2: CSS ================= */
+
+    /* TODO 10: Style the body
+       - font-family: Arial, sans-serif
+       - max-width: 600px
+       - margin: 0 auto (centers the page)
+       - padding: 20px
+       - background-color: #f5f5f5
+    */
+    /* YOUR CODE HERE */
+
+    /* TODO 11: Style the h1
+       - color: #333
+       - text-align: center
+    */
+    /* YOUR CODE HERE */
+
+    /* TODO 12: Style the form (make it a white card)
+       - background-color: white
+       - padding: 25px
+       - border-radius: 8px
+       - box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+    */
+    /* YOUR CODE HERE */
+
+    /* TODO 13: Style fieldset
+       - border: 1px solid #ddd
+       - border-radius: 5px
+       - padding: 15px
+       - margin: 15px 0
+       - background-color: #fafafa
+    */
+    /* YOUR CODE HERE */
+
+    /* TODO 14: Style legend
+       - font-weight: bold
+       - font-size: 1.1rem
+       - color: #333
+       - padding: 0 8px
+    */
+    /* YOUR CODE HERE */
+
+    /* TODO 15: Style label (each label on its own line, above its box)
+       - display: block
+       - margin-top: 10px
+       - margin-bottom: 5px
+       - font-weight: bold
+       - color: #333
+    */
+    /* YOUR CODE HERE */
+
+    /* TODO 16: Make the radio and checkbox labels plain
+       - Select the class .choice
+       - font-weight: normal
+    */
+    /* YOUR CODE HERE */
+
+    /* TODO 17: Style the text-style boxes, the dropdown, and the textarea.
+       Use this selector list (NOT radio or checkbox):
+         input[type="text"], input[type="email"], input[type="password"],
+         input[type="tel"], input[type="number"], input[type="date"],
+         select, textarea
+       - width: 100%
+       - padding: 10px
+       - border: 1px solid #ccc
+       - border-radius: 4px
+       - font-size: 1rem
+       - font-family: inherit
+       - box-sizing: border-box
+    */
+    /* YOUR CODE HERE */
+
+    /* TODO 18: Style the :focus state
+       Selector list: input:focus, select:focus, textarea:focus
+       - outline: none
+       - border-color: #007bff
+       - box-shadow: 0 0 5px rgba(0, 123, 255, 0.4)
+    */
+    /* YOUR CODE HERE */
+
+    /* TODO 19: Style the buttons
+       a) .button-group
+          - text-align: center
+          - margin-top: 20px
+       b) button
+          - padding: 12px 20px
+          - margin: 5px
+          - border: none
+          - border-radius: 4px
+          - font-size: 1rem
+          - font-weight: bold
+          - cursor: pointer
+          - background-color: #007bff
+          - color: white
+          - transition: background-color 0.3s ease
+       c) button:hover
+          - background-color: #0056b3
+       d) button[type="reset"]
+          - background-color: #6c757d
+       e) button[type="reset"]:hover
+          - background-color: #545b62
+    */
+    /* YOUR CODE HERE */
+
+    /* TODO 20: Add a media query for small screens
+       @media (max-width: 600px)
+         button:
+           - display: block
+           - width: 100%
+           - margin: 10px 0
+    */
+    /* YOUR CODE HERE */
+  </style>
+</head>
+<body>
+
+  <h1>Summer Coding Camp Registration</h1>
+
+  <!-- ================= PART 1: HTML ================= -->
+
+  <!-- TODO 1: Start the form
+       - id="camp-form"
+       - action="#"   (we have no server yet, so "#" sends it back to this page)
+       - method="get" (so you can see the answers in the address bar)
+       Everything in TODO 2 - TODO 8 goes INSIDE this form.
+  -->
+  <!-- YOUR CODE HERE -->
+   <p id="camp-form" action="#" method="get">TBA</p>
+
+    <!-- TODO 2: Make a fieldset with the legend "Camper Information".
+         Inside it, add a label + input for each row below.
+         Every label's for must match its input's id.
+         Every input needs a name (use the same word as the id).
+
+         Label text       type       id / name    other attributes
+         -----------      --------   ----------   -------------------------------------
+         Full Name:       text       fullName     placeholder="First and last name" required
+         Email Address:   email      email        placeholder="you@example.com" required
+         Password:        password   password     placeholder="At least 8 characters" minlength="8" required
+         Phone:           tel        phone        placeholder="330-555-0100"
+         Age:             number     age          min="13" max="18"
+         Start Date:      date       startDate    required
+    -->
+    <!-- YOUR CODE HERE -->
+     <fieldset>
+      <legend>Camper Information</legend>
+      <label for="name">Full Name:</label>
+      <input type="text" id="fullname" placeholder="First and last name" required>
+      <br>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="At least 8 characters" minlength="8" required>
+      <br>
+      <label for="tel">Phone</label>
+      <input type="tel" id="phone" placeholder="300-555-0100">
+      <br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" min="13" max="18">
+      <br>
+      <label for="date">Start Date</label>
+      <input type=date" id=startDate" required>
+     </fieldset>
+
+    <!-- TODO 3: Make a fieldset with the legend "T-Shirt Size".
+         Add 4 radio buttons. Put each <input> INSIDE its <label>,
+         and give each label class="choice".
+         - All 4 use name="shirtSize"
+         - Values and label text: small (Small), medium (Medium),
+           large (Large), xlarge (X-Large)
+         - Put required on the first radio button
+    -->
+    <!-- YOUR CODE HERE -->
+
+    <!-- TODO 4: Make a fieldset with the legend "What do you want to learn?".
+         Add 5 checkboxes. Put each <input> INSIDE its <label>,
+         and give each label class="choice".
+         - All 5 use name="topics"
+         - Values and label text: html (HTML and CSS), javascript (JavaScript),
+           python (Python), games (Game Design), robots (Robotics)
+    -->
+    <!-- YOUR CODE HERE -->
+
+    <!-- TODO 5: Make a fieldset with the legend "Contact and Comments".
+         a) A label "Best way to reach you:" and a select with id="contact" and name="contact".
+            Options (value / text):
+              ""     / -- Choose one --
+              email  / Email
+              phone  / Phone call
+              text   / Text message
+              mail   / Postal mail
+            Put required on the select.
+         b) A label "Anything else we should know?" and a textarea with
+            id="comments", name="comments", rows="5", cols="40",
+            maxlength="500", placeholder="Allergies, questions, or anything else"
+    -->
+    <!-- YOUR CODE HERE -->
+
+    <!-- TODO 6: After the last fieldset, add a div with class="button-group".
+         Inside it put:
+         - a submit button with the text "Register"
+         - a reset button with the text "Clear Form"
+    -->
+    <!-- YOUR CODE HERE -->
+
+    <!-- TODO 7: Tab order.
+         The link below has tabindex="1", so the Tab key jumps to it FIRST,
+         before any form box. Press Tab from the top of the page to see it.
+         Remove tabindex="1" so the link is reached in normal order.
+         (Keep the link. Just delete the tabindex attribute.)
+    -->
+    <p><a href="mailto:camp@example.com" tabindex="1">Questions? Email the camp director.</a></p>
+
+  <!-- TODO 8: Close the form -->
+  <!-- YOUR CODE HERE -->
+
+  <!-- TODO 9: Answer these in the comment below (one line each).
+       a) What does the name attribute do?
+       b) Why do all 4 radio buttons share one name?
+       c) What is the difference between method="get" and method="post"?
+       d) Why do we use action="#" right now?
+       e) Why should a form with a password never use method="get"?
+
+       a)
+       b)
+       c)
+       d)
+       e)
+  -->
+
+  <!-- ================= PART 3: TEST ================= -->
+  <!-- TODO 21: Test your form and fix anything that does not work.
+       [ ] Click each label: the cursor or check goes to the right control
+       [ ] Click Register with the form empty: the browser stops you
+       [ ] Type an email with no @ sign: the browser stops you
+       [ ] Type a 5-letter password: the browser stops you
+       [ ] Only one T-shirt size can be picked; many topics can be checked
+       [ ] Fill it in, click Register, and find your answers in the address bar
+       [ ] Clear Form empties everything
+       [ ] Tab goes top to bottom and you can always see which box you're in
+       [ ] Phone width (Developer Tools > device toolbar): the buttons go full width
+       [ ] The page passes https://validator.w3.org/
+  -->
+
+</body>
+</html>
