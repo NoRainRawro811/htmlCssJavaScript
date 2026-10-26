@@ -1,3 +1,113 @@
 * {
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
+/* The page */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;            /* keeps the form from getting too wide */
+  margin: 0 auto;              /* centers it */
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* The form: a white card */
+form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Each section box */
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+/* Section titles */
+legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0 8px;
+}
+
+/* Labels on their own line, above the box */
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* The text-style boxes, the dropdown, and the textarea.
+   Radio buttons and checkboxes are NOT in this list,
+   because we don't want them 100% wide. */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="url"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;        /* textarea uses a different font unless you set this */
+  box-sizing: border-box;      /* width includes padding and border */
+}
+
+/* The box the cursor is in */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;               /* remove the browser's default outline... */
+  border-color: #007bff;       /* ...and replace it with our own, so it is still easy to see */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+/* Buttons */
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;             /* hand pointer, so it looks clickable */
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Make the reset button look less important than submit */
+button[type="reset"] {
+  background-color: #6c757d;
+}
+
+button[type="reset"]:hover {
+  background-color: #545b62;
+}
+
+/* Small screens: buttons full width */
+@media (max-width: 600px) {
+  button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
