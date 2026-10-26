@@ -16,7 +16,7 @@
 
        <!-- Everything in steps 3-10 goes in here -->
 <fieldset>
-    <legend><u>Information</u></legend>
+    <legend><u>About You</u></legend>
     <form id="signup-form" action="#" method="get">
     <label for="fullName">Full Name</label>
     <input type="text" id="fullName" name="fullName" placeholder="First and last name" required>
@@ -42,13 +42,17 @@
     <label for="nickname">Nickname</label>
     <input type="text" id="nickname" name="nickname" maxlength="20">
     <br>
+    <fieldset>
+    <legend>A Little More</legend>
     <label>
     <input type="radio" name="meetingTime" value="before" required>Before school</label>
     <label>
     <input type="radio" name="meetingTime" value="lunch">Lunch</label>
     <label>
     <input type="radio" name="meetingTime" value="after">After school</label>
-
+    </fieldset>
+    
+    <legend>Interests</legend>
     <p>What do you want to learn? (Pick any)</p>
     <label>
     <input type="checkbox" name="interests" value="html">HTML and CSS</label>
@@ -57,6 +61,8 @@
     <label>
     <input type="checkbox" name="interests" value="games">Game design</label>
 
+    <fieldset>
+    <legend>A Little More</legend>
     <br>
     <label for="grade">Grade:</label>
     <select id="grade" name="grade" required>
@@ -71,6 +77,10 @@
     <br>
     <textarea id="message" name="message" rows="10" cols="40" placeholder="Tell us a little about yourself"></textarea>
     </fieldset>
+    <div class="button-group">
+    <button type="submit">Sign Up</button>
+    <button type="reset">Clear Form</button>
+    </div>
   </form>
 </body>
 </html>
