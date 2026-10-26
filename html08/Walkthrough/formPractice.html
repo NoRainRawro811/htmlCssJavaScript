@@ -13,12 +13,64 @@
   <!-- id: a name for this form (JavaScript will use it in Lesson 09)
        action: WHERE the answers are sent
        method: HOW the answers are sent (get or post) -->
-  <form id="signup-form" action="#" method="get">
+
+       <!-- Everything in steps 3-10 goes in here -->
+<fieldset>
+    <legend><u>Information</u></legend>
+    <form id="signup-form" action="#" method="get">
     <label for="fullName">Full Name</label>
     <input type="text" id="fullName" name="fullName" placeholder="First and last name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Must be at least 8 characters" minlength="8" required>
+    <br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="330-555-0100">
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="13" max="19">
+    <br>
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" name="startDate">
+    <br>
+    <label for="website">Your Website</label>
+    <input type="url" id="website" name="website" placeholder="https://example.com">
+    <br>
+    <label for="nickname">Nickname</label>
+    <input type="text" id="nickname" name="nickname" maxlength="20">
+    <br>
+    <label>
+    <input type="radio" name="meetingTime" value="before" required>Before school</label>
+    <label>
+    <input type="radio" name="meetingTime" value="lunch">Lunch</label>
+    <label>
+    <input type="radio" name="meetingTime" value="after">After school</label>
 
-    <!-- Everything in steps 3-10 goes in here -->
+    <p>What do you want to learn? (Pick any)</p>
+    <label>
+    <input type="checkbox" name="interests" value="html">HTML and CSS</label>
+    <label>
+    <input type="checkbox" name="interests" value="javascript">JavaScript</label>
+    <label>
+    <input type="checkbox" name="interests" value="games">Game design</label>
 
+    <br>
+    <label for="grade">Grade:</label>
+    <select id="grade" name="grade" required>
+    <option value="">-- Choose one --</option>
+    <option value="11">Junior (11th)</option>
+    <option value="12">Senior (12th)</option>
+    <option value="other">Other</option>
+    </select>
+
+    <br>
+    <label for="message">Why do you want to join?</label>
+    <br>
+    <textarea id="message" name="message" rows="10" cols="40" placeholder="Tell us a little about yourself"></textarea>
+    </fieldset>
   </form>
 </body>
 </html>
