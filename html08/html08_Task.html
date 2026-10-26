@@ -27,13 +27,22 @@
        - background-color: #f5f5f5
     */
     /* YOUR CODE HERE */
-
+   body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin:0 auto; 
+      padding:20px;
+      background-color: #f5f5f5;
+   }
     /* TODO 11: Style the h1
        - color: #333
        - text-align: center
     */
     /* YOUR CODE HERE */
-
+   h1 {
+      color: #333;
+      text-align: center;
+   }
     /* TODO 12: Style the form (make it a white card)
        - background-color: white
        - padding: 25px
@@ -41,7 +50,12 @@
        - box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
     */
     /* YOUR CODE HERE */
-
+   form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+   }
     /* TODO 13: Style fieldset
        - border: 1px solid #ddd
        - border-radius: 5px
@@ -50,7 +64,13 @@
        - background-color: #fafafa
     */
     /* YOUR CODE HERE */
-
+   fieldset {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 15px 0;
+      background-color: #fafafa;
+   }
     /* TODO 14: Style legend
        - font-weight: bold
        - font-size: 1.1rem
@@ -58,6 +78,12 @@
        - padding: 0 8px
     */
     /* YOUR CODE HERE */
+    legend {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #333;
+      padding:0 8px;
+    }
 
     /* TODO 15: Style label (each label on its own line, above its box)
        - display: block
@@ -67,12 +93,22 @@
        - color: #333
     */
     /* YOUR CODE HERE */
+    label {
+      display:block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color:#333;
+    }
 
     /* TODO 16: Make the radio and checkbox labels plain
        - Select the class .choice
        - font-weight: normal
     */
     /* YOUR CODE HERE */
+    .choice {
+      font-weight: normal;
+    }
 
     /* TODO 17: Style the text-style boxes, the dropdown, and the textarea.
        Use this selector list (NOT radio or checkbox):
@@ -88,6 +124,15 @@
        - box-sizing: border-box
     */
     /* YOUR CODE HERE */
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], input[type="date"], select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc; 
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: inherit;
+      box-sizing: border-box;
+    }
 
     /* TODO 18: Style the :focus state
        Selector list: input:focus, select:focus, textarea:focus
@@ -212,6 +257,23 @@
            python (Python), games (Game Design), robots (Robotics)
     -->
     <!-- YOUR CODE HERE -->
+     <fieldset>
+      <legend>What do you want to learn?</legend>
+      <label for="html">HTML and CSS</label>
+      <input type="checkbox" name="topics" class="choice">
+      <br>
+      <label for="javascript">JavaScript</label>
+      <input type="checkbox" name="topics" class="choice">
+      <br>
+      <label for="python">Python</label>
+      <input type="checkbox" name="topics" class="choice">
+      <br>
+      <label for="games">Game Design</label>
+      <input type="checkbox" name="topics" class="choice">
+      <br>
+      <label for="robots">Robotics</label>
+      <input type="checkbox" name="topics" class="choice">
+     </fieldset>
 
     <!-- TODO 5: Make a fieldset with the legend "Contact and Comments".
          a) A label "Best way to reach you:" and a select with id="contact" and name="contact".
@@ -227,6 +289,19 @@
             maxlength="500", placeholder="Allergies, questions, or anything else"
     -->
     <!-- YOUR CODE HERE -->
+     <fieldset>
+      <legend>Contacts and Comments</legend>
+      <label for="contact">Best way to reach you:</label>
+      <select id="contact" name="contact">
+         <option value="">-- Choose one --</option>
+         <option value="email">Email</option>
+         <option value="phone">Phone call</option>
+         <option value="text">Text message</option>
+         <option value="mail">Postal Mail</option>
+      </select>
+      <label>Anything else we should know?</label>
+      <textarea id="comments" name="comments" rows="5" cols="40" maxlength="500" placeholder="Allergies, questions, or anyting else"></textarea>
+     </fieldset>
 
     <!-- TODO 6: After the last fieldset, add a div with class="button-group".
          Inside it put:
@@ -234,6 +309,10 @@
          - a reset button with the text "Clear Form"
     -->
     <!-- YOUR CODE HERE -->
+     <div class="button-group">
+      <button type="submit">Register</button>
+      <button type="reset">Clear Form</button>
+     </div>
 
     <!-- TODO 7: Tab order.
          The link below has tabindex="1", so the Tab key jumps to it FIRST,
@@ -241,7 +320,7 @@
          Remove tabindex="1" so the link is reached in normal order.
          (Keep the link. Just delete the tabindex attribute.)
     -->
-    <p><a href="mailto:camp@example.com" tabindex="1">Questions? Email the camp director.</a></p>
+    <p><a href="mailto:camp@example.com">Questions? Email the camp director.</a></p>
 
   <!-- TODO 8: Close the form -->
   <!-- YOUR CODE HERE -->
@@ -253,11 +332,11 @@
        d) Why do we use action="#" right now?
        e) Why should a form with a password never use method="get"?
 
-       a)
-       b)
-       c)
-       d)
-       e)
+       a) it gives it a name so then you can't select the same thing twice or smth
+       b) so you can't select the same ones or something along those lines.
+       c) get puts the info in the url up top, post keeps it private, or something. 
+       d) Because we've no server to push it to. It'd be nice to buy one, but they're hell to upkeep AND buy in the first place. 
+       e) Because then you're just outing your poor user's password. 
   -->
 
   <!-- ================= PART 3: TEST ================= -->
