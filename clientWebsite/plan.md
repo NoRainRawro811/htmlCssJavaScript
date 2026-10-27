@@ -37,6 +37,7 @@ You might need to have a follow-up discussion with your client if you didn't get
 
 ## Changes tha just make sense: 
 - Add some things for the mobile stuff with flexbox(?) 
+- USE GRID AND FRACTIONS TO FIX THE FUCKING NAVBAR
 
 ## Still Needed from the Client
 Text for anything, social links, other links, information on fonts, preferred colors on a final decision. 
