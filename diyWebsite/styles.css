@@ -114,3 +114,18 @@ video {
     flex-direction: column;
   }
 }
+legend {
+  text-align: center;
+}
+.choice {
+  color: yellow;
+}
+label {
+  display:block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+.purpose {
+  text-align: center;
+}
