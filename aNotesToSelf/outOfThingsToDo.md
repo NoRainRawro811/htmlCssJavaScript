@@ -1,9 +1,9 @@
 # Out of things to do? Try these!
 
 ## Learn: 
-- Unity (via TBA)
+- Unity (via TBA) 
 - Godot (via video) 
-- JavaScript (via W3Schools and html09)
+- JavaScript (via W3Schools and html09) 
 
 ## Finish: 
 - Contact page on DIY Website 
