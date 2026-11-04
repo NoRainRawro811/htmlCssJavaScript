@@ -96,7 +96,7 @@ What is this called? What will a search engine do about it? Rewrite it as a good
 
 **j.** Name **two** SEO choices that also help people who use screen readers. Explain how each one helps both.
 
-**Answer:**
+**Answer:** Alt text helps screen readers and image search. Heading order helps screen readers and search engines read the page outline.
 
 
 ## 6. Your own site
@@ -104,8 +104,13 @@ What is this called? What will a search engine do about it? Rewrite it as a good
 **k.** Write a `<title>` and a meta description for the `index.html` of your DIY website. Then add them to your real `index.html` and push it.
 
 ```html
-
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deltarune's Prophecy - Home</title>
+    <meta name="description" content="Learn all there is to know about the prophecy from Deltarune by Toby Fox, this is a fan creation.">
+    <link rel="stylesheet" href="styles.css">
+</head>
 ```
 
 
@@ -113,9 +118,9 @@ What is this called? What will a search engine do about it? Rewrite it as a good
 
 | Term | Your definition |
 |---|---|
-| SEO | |
-| Crawler (spider) | |
-| Organic results | |
-| Meta description | |
-| Keyword stuffing | |
-| SERP | |
+| SEO | Search Engine Optimization |
+| Crawler (spider) | The thingy that checks how many links link to a website |
+| Organic results | results that aren't paid to show up |
+| Meta description | A description only availible with screen readers or viewing the code |
+| Keyword stuffing | Putting as many words that a browser would be looking for in the website |
+| SERP | Search Engine Results Page---Where you generally want your website to be. |
